@@ -10,7 +10,7 @@
     <style>
        body {
             font-family: 'Tajawal', sans-serif !important;
-            font-size: 18px;
+            font-size: 1rem; /* استخدام rem لحجم الخط الأساسي */
             background-color: #f0f8ff;
             color: #343a40;
             overflow-x: hidden;
@@ -20,436 +20,464 @@
             box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
         }
         .navbar-brand img {
-            height: 50px;
+            height: 3.125rem; /* 50px في rem */
             transition: transform 0.3s ease;
         }
         .navbar-brand img:hover {
             transform: scale(1.1);
         }
-       .navbar-nav .nav-link {
+        .navbar-nav .nav-link {
             color: #343a40;
-            margin-left: 15px;
+            margin-left: 1rem; /* 15px في rem */
             font-weight: 500;
             transition: color 0.3s ease, border-bottom 0.3s ease;
             border-bottom: 2px solid transparent;
         }
-         .navbar-nav .nav-link:hover {
+        .navbar-nav .nav-link:hover {
             color: #007bff;
             border-bottom: 2px solid #007bff;
         }
-        .jumbotron {
+       .jumbotron {
             background-color: #e9f0ff;
-            padding: 4rem;
+            padding: 2.5rem; /* 40px في rem */
             border-radius: 10px;
             text-align: center;
             box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            transition: transform 0.3s ease;
+           transition: transform 0.3s ease;
         }
-         .jumbotron:hover {
-            transform: translateY(-5px);
-         }
-         .jumbotron h1 {
-            color: #2b3035;
-              animation: fadeInDown 1s ease-in-out;
+       .jumbotron:hover {
+           transform: translateY(-5px);
+       }
+        .jumbotron h1 {
+           color: #2b3035;
+            animation: fadeInDown 1s ease-in-out;
         }
-
-        .jumbotron p {
-            color: #5a6268;
-            font-size: 1.2em;
-              animation: fadeInUp 1s ease-in-out 0.2s;
-         }
-
+       .jumbotron p {
+           color: #5a6268;
+           font-size: 1.2em;
+            animation: fadeInUp 1s ease-in-out 0.2s;
+        }
         .btn-primary {
             background-color: #007bff;
-            border-color: #007bff;
-             transition: background-color 0.3s ease, transform 0.3s ease;
+           border-color: #007bff;
+            transition: background-color 0.3s ease, transform 0.3s ease;
         }
         .btn-primary:hover {
             background-color: #0056b3;
-            border-color: #0056b3;
-            transform: scale(1.05);
+           border-color: #0056b3;
+           transform: scale(1.05);
         }
-
        .card {
-            margin-bottom: 20px;
-            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+           margin-bottom: 1.25rem; /* 20px في rem */
+           box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
             border-radius: 10px;
-            transition: transform 0.3s ease;
+           transition: transform 0.3s ease;
             background-color: #fff;
             animation: fadeIn 1s ease-in-out;
         }
-         .card:hover {
-            transform: translateY(-5px);
-        }
-        .card-title {
-            color: #343a40;
+       .card:hover {
+           transform: translateY(-5px);
+       }
+       .card-title {
+           color: #343a40;
             transition: color 0.3s ease;
+       }
+       .card-title:hover {
+           color: #007bff;
         }
-        .card-title:hover {
-             color: #007bff;
-        }
-         .card-text {
+        .card-text {
             color: #5a6268;
-            line-height: 1.6;
-         }
-
-        .card-footer a {
-             color: #007bff;
-            transition: color 0.3s ease;
-        }
-         .card-footer a:hover {
+           line-height: 1.6;
+       }
+       .card-footer a {
+            color: #007bff;
+           transition: color 0.3s ease;
+       }
+        .card-footer a:hover {
             text-decoration: none;
-             color: #0056b3;
+            color: #0056b3;
         }
-
-        footer {
+       footer {
             background-color: #ffffff;
             text-align: center;
-            padding: 15px 0;
-             margin-top: 30px;
-             box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
-        }
+           padding: 15px 0;
+           margin-top: 1.875rem; /* 30px في rem */
+           box-shadow: 0 -2px 4px rgba(0, 0, 0, 0.1);
+       }
         footer p {
-            color: #5a6268;
-            margin-bottom: 0;
+           color: #5a6268;
+           margin-bottom: 0;
         }
-        .footer-rights {
-             font-size: 0.9em;
-         }
-        /* Animation Keyframes */
-        @keyframes fadeIn {
-           from {
-                 opacity: 0;
+       .footer-rights {
+            font-size: 0.9em;
+        }
+       /* Animation Keyframes */
+       @keyframes fadeIn {
+            from {
+               opacity: 0;
             }
             to {
                 opacity: 1;
-            }
-         }
-
-         @keyframes fadeInDown {
+           }
+        }
+        @keyframes fadeInDown {
            from {
                opacity: 0;
-               transform: translateY(-20px);
-            }
-             to {
-                 opacity: 1;
-                 transform: translateY(0);
-            }
-         }
-
-        @keyframes fadeInUp {
-             from {
-               opacity: 0;
-               transform: translateY(20px);
+                transform: translateY(-20px);
             }
             to {
-               opacity: 1;
+                opacity: 1;
                transform: translateY(0);
             }
-         }
-
+       }
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+               transform: translateY(20px);
+            }
+           to {
+               opacity: 1;
+                transform: translateY(0);
+            }
+        }
        /* Styles for Statistics Section */
        .stats-section {
            background-color: #fff;
-            padding: 40px 0;
-            border-radius: 10px;
-           box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-            margin-top: 30px;
+            padding: 2.5rem 0; /* 40px في rem */
+           border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            margin-top: 1.875rem; /* 30px في rem */
             text-align: center;
-            transition: transform 0.3s ease;
-         }
+           transition: transform 0.3s ease;
+        }
         .stats-section:hover {
             transform: translateY(-5px);
         }
         .stats-item {
-           margin-bottom: 20px;
-         }
-        .stats-item h3 {
-             font-size: 2.5rem;
+           margin-bottom: 1.25rem; /* 20px في rem */
+        }
+       .stats-item h3 {
+           font-size: 2.2rem;
             color: #007bff;
             margin-bottom: 5px;
-             transition: transform 0.3s ease;
+           transition: transform 0.3s ease;
         }
         .stats-item p {
-             font-size: 1.2rem;
-            color: #5a6268;
-         }
-
-    </style>
-     <link rel="preconnect" href="https://fonts.googleapis.com">
-     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-     <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
+           font-size: 1.1rem;
+           color: #5a6268;
+        }
+        /* Media Queries for responsiveness */
+       @media (max-width: 768px) {
+           /* Styles for tablets and smaller screens */
+          .navbar-brand img {
+              height: 2.5rem; /* 40px في rem */
+           }
+            .jumbotron {
+               padding: 1.5rem; /* 24px في rem */
+            }
+           .jumbotron h1 {
+               font-size: 2rem;
+           }
+          .jumbotron p {
+               font-size: 1.1em;
+          }
+            .stats-section {
+               padding: 1.5rem 0; /* 24px في rem */
+           }
+           .stats-item h3 {
+                font-size: 2rem;
+           }
+        }
+       @media (max-width: 576px) {
+            /* Styles for phones */
+           .jumbotron h1 {
+                font-size: 1.5rem;
+            }
+            .jumbotron p {
+               font-size: 1em;
+           }
+           .stats-item h3 {
+                font-size: 1.8rem;
+            }
+            .stats-section{
+               padding:1rem 0
+           }
+       }
+   </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800&display=swap" rel="stylesheet">
 </head>
 <body>
 
     <header>
-         <nav class="navbar navbar-expand-lg navbar-light">
+        <nav class="navbar navbar-expand-lg navbar-light">
            <div class="container">
-                <a class="navbar-brand" href="#">
-                     <img src="https://placehold.co/80x50/f0f0f0/000000?text=Smart+Logo" alt="شعار مدرسة Smart الثانوية">
-                </a>
-                <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                 </button>
-                <div class="collapse navbar-collapse" id="navbarNav">
-                     <ul class="navbar-nav ml-auto">
-                        <li class="nav-item active">
-                             <a class="nav-link" href="#home">الرئيسية</a>
-                         </li>
-                         <li class="nav-item">
-                           <a class="nav-link" href="#about">عن المدرسة</a>
+                 <a class="navbar-brand" href="#">
+                    <img src="https://placehold.co/80x50/f0f0f0/000000?text=Smart+Logo" alt="شعار مدرسة Smart الثانوية">
+                 </a>
+               <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                     <span class="navbar-toggler-icon"></span>
+                </button>
+               <div class="collapse navbar-collapse" id="navbarNav">
+                   <ul class="navbar-nav ml-auto">
+                       <li class="nav-item active">
+                            <a class="nav-link" href="#home">الرئيسية</a>
+                        </li>
+                      <li class="nav-item">
+                            <a class="nav-link" href="#about">عن المدرسة</a>
                        </li>
-                        <li class="nav-item">
+                      <li class="nav-item">
                            <a class="nav-link" href="#academics">الأقسام الأكاديمية</a>
                         </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="#activities">الأنشطة</a>
-                         </li>
-                         <li class="nav-item">
-                             <a class="nav-link" href="#admission">التسجيل</a>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#activities">الأنشطة</a>
+                      </li>
+                      <li class="nav-item">
+                          <a class="nav-link" href="#admission">التسجيل</a>
+                       </li>
+                       <li class="nav-item">
+                            <a class="nav-link" href="#contact">تواصل معنا</a>
                         </li>
-                        <li class="nav-item">
-                             <a class="nav-link" href="#contact">تواصل معنا</a>
-                        </li>
-                   </ul>
-               </div>
+                  </ul>
+                </div>
             </div>
         </nav>
     </header>
 
-     <main class="container mt-4">
+    <main class="container mt-4">
        <section id="home">
-            <div class="jumbotron" data-aos="fade-up" data-aos-duration="1000">
+            <div class="jumbotron" data-aos="fade-up" data-aos-duration="500">
                 <h1 class="display-4">مرحباً بكم في مدرسة Smart الثانوية</h1>
-                <p class="lead">نحن هنا لنقدم لكم تعليماً تقنياً رائداً ومتميزاً.</p>
+               <p class="lead">نحن هنا لنقدم لكم تعليماً تقنياً رائداً ومتميزاً.</p>
                 <hr class="my-4">
-                 <p>اكتشفوا المزيد عن مدرستنا وما تقدمه من برامج وأنشطة تقنية.</p>
-               <a class="btn btn-primary btn-lg" href="#about" role="button">اقرأ المزيد</a>
-           </div>
-       </section>
+                <p>اكتشفوا المزيد عن مدرستنا وما تقدمه من برامج وأنشطة تقنية.</p>
+                <a class="btn btn-primary btn-lg" href="#about" role="button">اقرأ المزيد</a>
+            </div>
+        </section>
 
-       <section id="about">
-            <h2 data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-school"></i> عن مدرسة Smart الثانوية</h2>
-           <p data-aos="fade-left" data-aos-duration="1000">مدرسة Smart الثانوية هي مؤسسة تعليمية رائدة متخصصة في تقديم تعليم تقني عالي الجودة، تساهم في إعداد جيل من المهندسين والفنيين المتميزين.</p>
-           <div class="row">
-               <div class="col-md-4" data-aos="flip-left" data-aos-duration="1000">
-                   <div class="card">
-                      <div class="card-body">
-                            <h5 class="card-title">رؤيتنا</h5>
+        <section id="about">
+           <h2 data-aos="fade-up" data-aos-duration="500"><i class="fa-solid fa-school"></i> عن مدرسة Smart الثانوية</h2>
+           <p data-aos="fade-up" data-aos-duration="500">مدرسة Smart الثانوية هي مؤسسة تعليمية رائدة متخصصة في تقديم تعليم تقني عالي الجودة، تساهم في إعداد جيل من المهندسين والفنيين المتميزين.</p>
+            <div class="row">
+                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card">
+                        <div class="card-body">
+                             <h5 class="card-title">رؤيتنا</h5>
                            <p class="card-text">الريادة في التعليم التقني الثانوي وإعداد قادة المستقبل في المجالات التكنولوجية.</p>
                         </div>
                    </div>
                 </div>
-               <div class="col-md-4" data-aos="flip-up" data-aos-duration="1000">
-                    <div class="card">
+                 <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                   <div class="card">
                         <div class="card-body">
-                            <h5 class="card-title">رسالتنا</h5>
+                             <h5 class="card-title">رسالتنا</h5>
                            <p class="card-text">توفير بيئة تعليمية تقنية محفزة، تعزز قيم الابتكار والتميز والإبداع في المجالات الهندسية.</p>
                         </div>
-                    </div>
-                </div>
-               <div class="col-md-4" data-aos="flip-right" data-aos-duration="1000">
-                     <div class="card">
-                        <div class="card-body">
-                             <h5 class="card-title">قيمنا</h5>
-                            <p class="card-text">الابتكار، الإتقان، المسؤولية، التعاون، والتطوير المستمر.</p>
-                         </div>
                    </div>
                </div>
-           </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                     <div class="card">
+                        <div class="card-body">
+                            <h5 class="card-title">قيمنا</h5>
+                           <p class="card-text">الابتكار، الإتقان، المسؤولية، التعاون، والتطوير المستمر.</p>
+                       </div>
+                   </div>
+                </div>
+            </div>
         </section>
 
         <section id="academics">
-           <h2 data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-graduation-cap"></i> الأقسام الأكاديمية</h2>
-           <p data-aos="fade-left" data-aos-duration="1000">تعرف على الأقسام الأكاديمية المتخصصة في المجالات التقنية.</p>
-             <div class="row">
-                 <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
-                     <div class="card">
+           <h2 data-aos="fade-up" data-aos-duration="500"><i class="fa-solid fa-graduation-cap"></i> الأقسام الأكاديمية</h2>
+           <p data-aos="fade-up" data-aos-duration="500">تعرف على الأقسام الأكاديمية المتخصصة في المجالات التقنية.</p>
+           <div class="row">
+               <div class="col-md-4" data-aos="fade-down" data-aos-duration="500">
+                    <div class="card">
                         <div class="card-body">
-                             <h5 class="card-title">قسم الحاسب الآلي</h5>
+                            <h5 class="card-title">قسم الحاسب الآلي</h5>
                            <p class="card-text">برامج متخصصة في علوم الحاسب وتصميم الشبكات.</p>
-                            <div class="card-footer">
-                               
-                            </div>
-                        </div>
+                           <div class="card-footer">
+                            
+                           </div>
+                      </div>
                     </div>
                 </div>
-                <div class="col-md-4" data-aos="zoom-in-down" data-aos-duration="1000">
-                   <div class="card">
+               <div class="col-md-4" data-aos="fade-down" data-aos-duration="500">
+                    <div class="card">
                         <div class="card-body">
                             <h5 class="card-title">قسم الإلكترونيات</h5>
                            <p class="card-text">برامج متخصصة في تصميم الدوائر الإلكترونية، الروبوتات، وأنظمة التحكم.</p>
                            <div class="card-footer">
-                            
-                            </div>
-                       </div>
-                    </div>
-                </div>
-                 <div class="col-md-4" data-aos="zoom-in-up" data-aos-duration="1000">
-                     <div class="card">
-                        <div class="card-body">
-                            <h5 class="card-title">قسم الكهرباء</h5>
-                           <p class="card-text">برامج متخصصة في تصميم أنظمة الطاقة الكهربائية، التحكم الآلي، والتمديدات.</p>
-                            <div class="card-footer">
-  
-                            </div>
-                       </div>
-                    </div>
-                </div>
-            </div>
-       </section>
-
-       <section id="activities">
-           <h2 data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-person-running"></i> الأنشطة والفعاليات</h2>
-            <p data-aos="fade-left" data-aos-duration="1000">اطلع على الأنشطة التقنية والفعاليات التي ننظمها على مدار العام.</p>
-           <div class="row">
-                <div class="col-md-4" data-aos="zoom-out-left" data-aos-duration="1000">
-                    <div class="card">
-                         <img src="https://placehold.co/350x200/f0f0f0/000000?text=Tech+Competition" class="card-img-top" alt="مسابقة تقنية">
-                        <div class="card-body">
-                            <h5 class="card-title">مسابقات تقنية</h5>
-                             <p class="card-text">مسابقات في البرمجة، الروبوتات، وتصميم الدوائر الإلكترونية.</p>
-                             <div class="card-footer">
-                                  <a href="#">اقرأ المزيد</a>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-out-down" data-aos-duration="1000">
-                    <div class="card">
-                           <img src="https://placehold.co/350x200/f0f0f0/000000?text=Workshops" class="card-img-top" alt="ورش عمل تقنية">
-                        <div class="card-body">
-                             <h5 class="card-title">ورش عمل تقنية</h5>
-                            <p class="card-text">ورش عمل في مجالات البرمجة، الإلكترونيات، والكهرباء.</p>
-                           <div class="card-footer">
-                                 <a href="#">اقرأ المزيد</a>
-                             </div>
-                         </div>
-                    </div>
-                </div>
-                <div class="col-md-4" data-aos="zoom-out-right" data-aos-duration="1000">
-                     <div class="card">
-                           <img src="https://placehold.co/350x200/f0f0f0/000000?text=Tech+Projects" class="card-img-top" alt="مشاريع تقنية">
-                        <div class="card-body">
-                             <h5 class="card-title">مشاريع تقنية</h5>
-                            <p class="card-text">معرض للمشاريع التقنية الطلابية المبتكرة.</p>
-                             <div class="card-footer">
-                                <a href="#"> متستغربش كسلت اكتب حاجة بعد ما جمعت الصور فا بعت ل GPT</a>
-                            </div>
+                          
+                           </div>
                        </div>
                    </div>
-               </div>
+                </div>
+                <div class="col-md-4" data-aos="fade-down" data-aos-duration="500">
+                     <div class="card">
+                       <div class="card-body">
+                           <h5 class="card-title">قسم الكهرباء</h5>
+                            <p class="card-text">برامج متخصصة في تصميم أنظمة الطاقة الكهربائية، التحكم الآلي، والتمديدات.</p>
+                           <div class="card-footer">
+                             
+                            </div>
+                        </div>
+                  </div>
+                </div>
             </div>
         </section>
 
-        <section id="admission">
-           <h2 data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-address-card"></i>  التسجيل والقبول</h2>
-            <p data-aos="fade-left" data-aos-duration="1000">تعرف على إجراءات التسجيل والقبول وكيفية الانضمام إلى مدرسة Smart الثانوية.</p>
+        <section id="activities">
+           <h2 data-aos="fade-up" data-aos-duration="500"><i class="fa-solid fa-person-running"></i> الأنشطة والفعاليات</h2>
+            <p data-aos="fade-up" data-aos-duration="500">اطلع على الأنشطة التقنية والفعاليات التي ننظمها على مدار العام.</p>
            <div class="row">
-                <div class="col-md-6" data-aos="fade-up-right" data-aos-duration="1000">
-                     <div class="card">
-                         <div class="card-body">
-                              <h5 class="card-title">إجراءات التسجيل</h5>
-                             <p class="card-text">تسجيل إلكتروني سهل وسريع عبر بوابتنا الرقمية.</p>
-                             <div class="card-footer">
-                                   <a href="#">اطلع فوق</a>
-                               </div>
-                         </div>
-                    </div>
-                 </div>
-                 <div class="col-md-6" data-aos="fade-up-left" data-aos-duration="1000">
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
                     <div class="card">
+                        <img src="https://placehold.co/350x200/f0f0f0/000000?text=Tech+Competition" class="card-img-top" alt="مسابقة تقنية">
                         <div class="card-body">
-                             <h5 class="card-title">شروط القبول</h5>
-                            <p class="card-text">يجب أن يكون الطالب مستوفيًا لشروط القبول المحددة والمتوفرة على موقعنا.</p>
-                             <div class="card-footer">
-                                 <a href="#">هوفرها هنا قريبا او روح اي فرع</a>
+                           <h5 class="card-title">مسابقات تقنية</h5>
+                             <p class="card-text">مسابقات في البرمجة، الروبوتات، وتصميم الدوائر الإلكترونية.</p>
+                           <div class="card-footer">
+                                <a href="#">اقرأ المزيد</a>
+                            </div>
+                        </div>
+                  </div>
+                </div>
+               <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                   <div class="card">
+                        <img src="https://placehold.co/350x200/f0f0f0/000000?text=Workshops" class="card-img-top" alt="ورش عمل تقنية">
+                        <div class="card-body">
+                            <h5 class="card-title">ورش عمل تقنية</h5>
+                            <p class="card-text">ورش عمل في مجالات البرمجة، الإلكترونيات، والكهرباء.</p>
+                            <div class="card-footer">
+                                <a href="#">اقرأ المزيد</a>
                              </div>
+                       </div>
+                   </div>
+               </div>
+                <div class="col-md-4" data-aos="fade-up" data-aos-duration="500">
+                    <div class="card">
+                         <img src="https://placehold.co/350x200/f0f0f0/000000?text=Tech+Projects" class="card-img-top" alt="مشاريع تقنية">
+                       <div class="card-body">
+                           <h5 class="card-title">مشاريع تقنية</h5>
+                           <p class="card-text">معرض للمشاريع التقنية الطلابية المبتكرة.</p>
+                            <div class="card-footer">
+                               <a href="#"> متستغربش كسلت اكتب حاجة بعد ما جمعت الصور فا بعت ل GPT</a>
+                           </div>
                         </div>
                     </div>
+               </div>
+           </div>
+       </section>
+
+        <section id="admission">
+            <h2 data-aos="fade-up" data-aos-duration="500"><i class="fa-solid fa-address-card"></i>  التسجيل والقبول</h2>
+           <p data-aos="fade-up" data-aos-duration="500">تعرف على إجراءات التسجيل والقبول وكيفية الانضمام إلى مدرسة Smart الثانوية.</p>
+            <div class="row">
+                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="500">
+                   <div class="card">
+                       <div class="card-body">
+                            <h5 class="card-title">إجراءات التسجيل</h5>
+                            <p class="card-text">تسجيل إلكتروني سهل وسريع عبر بوابتنا الرقمية.</p>
+                             <div class="card-footer">
+                                 <a href="#">اطلع فوق</a>
+                            </div>
+                       </div>
+                    </div>
+                </div>
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="500">
+                     <div class="card">
+                       <div class="card-body">
+                           <h5 class="card-title">شروط القبول</h5>
+                            <p class="card-text">يجب أن يكون الطالب مستوفيًا لشروط القبول المحددة والمتوفرة على موقعنا.</p>
+                            <div class="card-footer">
+                                <a href="#">هوفرها هنا قريبا او روح اي فرع</a>
+                            </div>
+                       </div>
+                   </div>
                 </div>
             </div>
         </section>
 
        <section id="contact">
-            <h2 data-aos="fade-right" data-aos-duration="1000"><i class="fa-solid fa-phone"></i> تواصل معنا</h2>
-           <p data-aos="fade-left" data-aos-duration="1000">يمكنكم التواصل معنا عبر الطرق التالية:</p>
-           <div class="row">
-                 <div class="col-md-6" data-aos="flip-left" data-aos-duration="1000">
+            <h2 data-aos="fade-up" data-aos-duration="500"><i class="fa-solid fa-phone"></i> تواصل معنا</h2>
+           <p data-aos="fade-up" data-aos-duration="500">يمكنكم التواصل معنا عبر الطرق التالية:</p>
+            <div class="row">
+                <div class="col-md-6" data-aos="fade-up" data-aos-duration="500">
                     <div class="card">
-                       <div class="card-body">
+                         <div class="card-body">
                             <h5 class="card-title"><i class="fa-solid fa-envelope"></i> البريد الإلكتروني</h5>
                             <p class="card-text">BL7A@smartschool.com</p>
-                        </div>
-                    </div>
+                         </div>
+                   </div>
                 </div>
-                 <div class="col-md-6" data-aos="flip-right" data-aos-duration="1000">
-                    <div class="card">
-                        <div class="card-body">
+                 <div class="col-md-6" data-aos="fade-up" data-aos-duration="500">
+                     <div class="card">
+                       <div class="card-body">
                             <h5 class="card-title"><i class="fa-solid fa-phone"></i> رقم الهاتف</h5>
                              <p class="card-text">+20100000000</p>
                          </div>
                     </div>
-               </div>
+                </div>
+            </div>
+       </section>
+
+        <section id="stats">
+            <div class="container stats-section" data-aos="fade-up" data-aos-duration="500">
+                <h2>إحصائيات المدرسة</h2>
+                 <div class="row">
+                     <div class="col-md-4 stats-item">
+                        <p>قتيل</p>
+                       <h3 id="activities-count" data-target="80">0</h3>
+                    </div>
+                   <div class="col-md-4 stats-item">
+                         <p>الخريجين</p>
+                         <h3 id="graduates-count" data-target="200">0</h3>
+                    </div>
+                   <div class="col-md-4 stats-item">
+                         <p>الطلاب</p>
+                         <h3 id="students-count" data-target="500">0</h3>
+                    </div>
+                 </div>
            </div>
        </section>
 
-       <section id="stats">
-            <div class="container stats-section" data-aos="fade-up" data-aos-duration="1000">
-                <h2>إحصائيات المدرسة</h2>
-                 <div class="row">
-                    <div class="col-md-4 stats-item">
-                       <p>قتيل</p>
-                         <h3 id="activities-count" data-target="80">0</h3>
-                   </div>
-                   <div class="col-md-4 stats-item">
-                        <p>الخريجين</p>
-                        <h3 id="graduates-count" data-target="200">0</h3>
-                    </div>
-                     <div class="col-md-4 stats-item">
-                        <p>الطلاب</p>
-                       <h3 id="students-count" data-target="500">0</h3>
-                   </div>
-               </div>
-            </div>
-        </section>
-
     </main>
 
-     <footer class="bg-light text-center py-3 mt-4">
-       <p>© Yahya El Hamzawy 2025 جميع الحقوق محفوظة.</p>
-       <p class="footer-rights">تصميم وتطوير: By : <a href="https://linktr.ee/yahya_el_hamzawy" target="_blank">Yahya El Hamzawy</a></p>
+    <footer class="bg-light text-center py-3 mt-4">
+        <p>© Yahya El Hamzawy 2025 جميع الحقوق محفوظة.</p>
+        <p class="footer-rights">تصميم وتطوير: By : <a href="https://linktr.ee/yahya_el_hamzawy" target="_blank">Yahya El Hamzawy</a></p>
     </footer>
 
-     <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.3/dist/umd/popper.min.js"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
     <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
        <script>
         AOS.init();
-         // Function to animate the counter
-        function animateCounter(element) {
-             const target = parseInt(element.getAttribute('data-target'));
-            let count = 0;
-           const speed = 150;
+        // Function to animate the counter
+       function animateCounter(element) {
+           const target = parseInt(element.getAttribute('data-target'));
+           let count = 0;
+            const speed = 150;
            const counter = setInterval(() => {
-                count++;
+               count++;
                 element.textContent = count;
-                 if (count === target) {
-                     clearInterval(counter);
-                }
-            }, speed/target );
-         }
+                if (count === target) {
+                   clearInterval(counter);
+               }
+            }, speed / target);
+       }
         const counters = document.querySelectorAll('.stats-item h3');
-        const observer = new IntersectionObserver((entries, observer) => {
-            entries.forEach(entry => {
-               if (entry.isIntersecting) {
+       const observer = new IntersectionObserver((entries, observer) => {
+           entries.forEach(entry => {
+                if (entry.isIntersecting) {
                      counters.forEach(counter => animateCounter(counter));
                     observer.unobserve(entry.target);
-               }
-            });
-        });
+                }
+           });
+       });
         counters.forEach(counter => observer.observe(counter));
-    </script>
+   </script>
 </body>
 </html>
